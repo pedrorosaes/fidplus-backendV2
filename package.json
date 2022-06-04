@@ -21,7 +21,8 @@
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.3.3",
     "prettier": "^2.6.2",
-    "sequelize": "^6.20.1"
+    "sequelize": "^6.20.1",
+    "swagger-ui-express": "^4.4.0"
   },
   "devDependencies": {
     "eslint": "^8.17.0",

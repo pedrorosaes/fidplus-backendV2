@@ -1,0 +1,55 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "FidPlus APiRest",
+    "description": "Api para cadastro e manipulação de clientes e fidelidades.",
+    "contact":{
+      "email": "pedro_rosaes@hotmail.com"
+      },
+    "version": "1.0.0"   
+
+  },
+"servers": [
+  {
+    "url": "http://localhost:3000",
+    "description": "Api Localhost"
+  }
+],
+"paths": {
+  "/client": {
+    "post": {
+      "summary": "Cadastro de clients",
+      "description": "Rota para cadastrar novos clients",
+      "tags": ["Client"],
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ClientLogin"
+            }
+          }
+        }
+      }
+    }
+  }
+},
+"components": {
+  "schemas": {
+    "ClientLogin": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
+
+}

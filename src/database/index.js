@@ -1,21 +1,21 @@
 const Sequelize = require("sequelize");
 
-// const DB_NAME = "heroku_b7e8c7bc6ade819";
-// const DB_USER = "b1d22bb257afac";
-// const DB_PASS = "a512ea32";
-// const DB_CONFIG = {
-//   dialect: "mysql",
-//   host: "us-cdbr-east-05.cleardb.net",
-//   port: "3306",
-// };
 const DB_NAME = "heroku_b7e8c7bc6ade819";
-const DB_USER = "root";
-const DB_PASS = "32259710";
+const DB_USER = "b1d22bb257afac";
+const DB_PASS = "a512ea32";
 const DB_CONFIG = {
   dialect: "mysql",
-  host: "localhost",
+  host: "us-cdbr-east-05.cleardb.net",
   port: "3306",
 };
+// const DB_NAME = "heroku_b7e8c7bc6ade819";
+// const DB_USER = "root";
+// const DB_PASS = "32259710";
+// const DB_CONFIG = {
+//   dialect: "mysql",
+//   host: "localhost",
+//   port: "3306",
+// };
 
 let db = {};
 

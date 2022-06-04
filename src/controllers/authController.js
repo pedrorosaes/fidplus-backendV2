@@ -31,7 +31,7 @@ const authController = {
       { expiresIn: "1h" }
     );
 
-    return res.json({ token, restaurant });
+    return res.json({ token, client: restaurant });
   },
   clientLogin: async (req, res) => {
     const { email, password } = req.body;
